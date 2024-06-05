@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Video Demo</title>
+	<meta name="viewport" content="width=device-width">
+	<meta charset="UTF-8">
+	<style type="text/css">
+		@font-face {
+			font-family: MainFont;
+			src: url("https://jathu.me/src/GT-America-Extended-Regular.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+		}
+
+		html {
+			width: 100%;
+		 	height: 100%;
+		}
+
+		body {
+			margin: 0;
+			padding: 2em 2em;
+			font-family: MainFont,  -apple-system, BlinkMacSystemFont, sans-serif;
+			background-color: #38daff;
+		}
+
+		h1 {
+			color: #ffed8f;
+			text-shadow: 0px 2px 4px #47cdec;
+		}
+
+    .box {
+      display: flex;
+      padding: 20px;
+      margin: 10px 0px;
+      border-radius: 18px;
+      justify-content: space-between;
+    }
+
+    .clickable {
+      border: none;
+      padding: 10px 15px;
+      border-radius: 12px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .clickable-black {
+      background-color: black;
+      color: white;
+    }
+
+    .clickable-white {
+      background-color: rgb(128, 128, 128);
+      color: black;
+    }
+	</style>
+</head>
+<body>
+  <h1>Hover Demo</h1>
+  <div class="box" style="background-color: black;">
+    <button class="clickable clickable-black">Click</button>
+    <button class="clickable">Click</button>
+    <button class="clickable clickable-white">Click</button>
+  </div>
+  <div class="box" style="background-color: rgb(128, 128, 128);">
+    <button class="clickable clickable-black">Click</button>
+    <button class="clickable">Click</button>
+    <button class="clickable clickable-white">Click</button>
+  </div>
+  <div class="box" style="background-color: white;">
+    <button class="clickable clickable-black">Click</button>
+    <button class="clickable">Click</button>
+    <button class="clickable clickable-white">Click</button>
+  </div>
+</body>
+</html>
