@@ -40,8 +40,7 @@
     .clickable {
       border: none;
       padding: 10px 15px;
-      border-radius: 12px;
-      font-size: 20px;
+      font-size: 40px;
       cursor: pointer;
     }
 
@@ -54,24 +53,36 @@
       background-color: rgb(128, 128, 128);
       color: black;
     }
+
+    .corner-sharp {
+      border-radius: 0px;
+    }
+
+    .corner-round {
+      border-radius: 15px;
+    }
+
+    .corner-pill {
+      border-radius: 50px;
+    }
 	</style>
 </head>
 <body>
   <h1>Hover Demo</h1>
   <div class="box" style="background-color: black;">
-    <button class="clickable clickable-black">Click</button>
-    <button class="clickable">Click</button>
-    <button class="clickable clickable-white">Click</button>
+    <button class="clickable clickable-black border-radius">Click</button>
+    <button class="clickable corner-round">Click</button>
+    <button class="clickable clickable-white corner-pill">Click</button>
   </div>
   <div class="box" style="background-color: rgb(128, 128, 128);">
-    <button class="clickable clickable-black">Click</button>
-    <button class="clickable">Click</button>
-    <button class="clickable clickable-white">Click</button>
+    <button class="clickable clickable-black border-radius">Click</button>
+    <button class="clickable corner-round">Click</button>
+    <button class="clickable clickable-white corner-pill">Click</button>
   </div>
   <div class="box" style="background-color: rgb(255, 217, 16);">
-    <button class="clickable clickable-black">Click</button>
-    <button class="clickable">Click</button>
-    <button class="clickable clickable-white">Click</button>
+    <button class="clickable clickable-black border-radius">Click</button>
+    <button class="clickable corner-round">Click</button>
+    <button class="clickable clickable-white corner-pill">Click</button>
   </div>
 </body>
 </html>
